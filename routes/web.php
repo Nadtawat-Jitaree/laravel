@@ -29,6 +29,7 @@ Route::middleware('auth')->controller(PackagesController::class)->group(function
 Route::middleware('auth')->controller(FeaturesController::class)->group(function () {
     Route::get('/features/create', 'create')->name('features.create');
     Route::post('/features/store', 'store')->name('features.store');
+    Route::post('/features/storeMultiple', 'storeMultiple')->name('features.storeMultiple');
 
 });
 
